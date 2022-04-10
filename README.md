@@ -1,0 +1,1 @@
+BMI calculator of Flutter app brewery course adapted for vk mini apps tests
