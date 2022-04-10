@@ -15,21 +15,21 @@ class CalculatorBrain {
 
   String getResult() {
     if (_bmi! >= 25) {
-      return 'Overweight';
+      return 'Перевес';
     } else if (_bmi! > 18.5) {
-      return 'Normal';
+      return 'Номально';
     } else {
-      return 'Underweight';
+      return 'Недовес';
     }
   }
 
   String getInterpretation() {
     if (_bmi! >= 25) {
-      return 'You have a higher than normal body weight. Try to exercise more.';
+      return 'Вес больше нормы. Необходимо заниматься.';
     } else if (_bmi! >= 18.5) {
-      return 'You have a normal body weight. Good job!';
+      return 'Нормальный вес. Отличная работа!';
     } else {
-      return 'You have a lower than normal body weight. You can eat a bit more.';
+      return 'Вес меньше нормы. Можете больше есть.';
     }
   }
 }
