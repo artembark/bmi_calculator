@@ -3,12 +3,15 @@ import 'package:bmi_calculator/screens/input_page.dart';
 import 'package:vk_bridge/vk_bridge.dart';
 
 Future<void> main() async {
-  await VKBridge.instance.init();
+  final result = await VKBridge.instance.init();
 
+  print('VKBridge.init: $result');
   runApp(BMICalculator());
 }
 
 class BMICalculator extends StatelessWidget {
+  const BMICalculator({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
